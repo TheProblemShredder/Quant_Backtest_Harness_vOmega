@@ -94,7 +94,7 @@ def backtest(pr: Prereg, rng: random.Random, mode: str) -> Dict[str, Any]:
             # ablated: ignore signal, always long
             new_pos = 1
         elif mode == "negative_control":
-            new_pos = rng.choice([-1, 0, 1])
+            new_pos = 0  # flat: deterministic negative control
 
         traded = (new_pos != pos)
         pos = new_pos
