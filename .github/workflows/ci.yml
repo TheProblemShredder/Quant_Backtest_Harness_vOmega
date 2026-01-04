@@ -1,0 +1,26 @@
+name: ci
+on:
+  push:
+  pull_request:
+
+jobs:
+  harness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Run backtest harness (unblind + blind)
+        run: |
+          python3 run.py --out outputs_unblind --seed 123
+          python3 run.py --out outputs_blind  --seed 123 --blind --reveal
+          test -f outputs_unblind/prereg.json
+          test -f outputs_unblind/results.json
+          test -f outputs_unblind/ledger.ndjson
+          test -f outputs_unblind/artifacts_manifest.json
+          test -f outputs_blind/prereg.json
+          test -f outputs_blind/results.json
+          test -f outputs_blind/ledger.ndjson
+          test -f outputs_blind/artifacts_manifest.json
+          test -f outputs_blind/blind_map.json
