@@ -1,5 +1,8 @@
 # Quant Backtest Harness vΩ (Public Demo)
 
+![CI](https://github.com/TheProblemShredder/Quant_Backtest_Harness_vOmega/actions/workflows/ci.yml/badge.svg)
+
+
 A tiny, reproducible backtest scaffold demonstrating verification-first discipline:
 
 - preregistered parameters + thresholds

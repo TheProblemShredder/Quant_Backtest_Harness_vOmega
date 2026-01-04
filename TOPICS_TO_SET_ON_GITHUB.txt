@@ -1,0 +1,3 @@
+Set these topics in GitHub UI (Settings → Topics):
+
+ablation, audit-log, backtesting, ci, deterministic, evaluation, experimentation, github-actions, negative-controls, pytest, python, quant, reproducibility, tooling, trading
