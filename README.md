@@ -28,7 +28,7 @@ source .venv/bin/activate
 python3 -m pip install --upgrade pip
 python3 -m pip install -e . pytest
 pytest -q
-python3 -m your_module --help
+python3 run.py --help
 ```
 
 ### Example output
