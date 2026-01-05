@@ -1,0 +1,9 @@
+$ python3 -V
+Python 3.14.2
+
+$ pytest -q
+
+no tests ran in 0.00s
+
+$ python3 -m your_module --help
+/Users/benvivian/Desktop/TheProblemShredderRepos/Quant_Backtest_Harness_vOmega/.venv/bin/python3: No module named your_module

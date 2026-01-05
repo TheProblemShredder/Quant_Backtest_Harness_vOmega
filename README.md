@@ -18,3 +18,18 @@ Stdlib only.
 Run:
   python3 run.py --out outputs_unblind --seed 123
   python3 run.py --out outputs_blind  --seed 123 --blind --reveal
+
+## Proof (reproducible run)
+
+### Commands
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install --upgrade pip
+python3 -m pip install -e . pytest
+pytest -q
+python3 -m your_module --help
+```
+
+### Example output
+See: `docs/example_output.txt`
