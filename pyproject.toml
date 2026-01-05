@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quant-backtest-harness-vomega"
+version = "0.1.0"
+description = "Quant backtest harness vΩ: deterministic backtests with run IDs, audit-friendly metrics + outputs."
+readme = "README.md"
+requires-python = ">=3.10"
+
+[tool.setuptools]
+py-modules = ["run"]
