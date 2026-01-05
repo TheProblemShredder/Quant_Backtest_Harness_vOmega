@@ -1,3 +1,9 @@
+## What to open first (30 seconds)
+
+- `run.py`
+- `docs/example_output.txt`
+- `.github/workflows/ci.yml`
+
 # Quant Backtest Harness vΩ (Public Demo)
 
 ![CI](https://github.com/TheProblemShredder/Quant_Backtest_Harness_vOmega/actions/workflows/ci.yml/badge.svg)
@@ -33,3 +39,7 @@ python3 run.py --help
 
 ### Example output
 See: `docs/example_output.txt`
+
+## Quickstart
+
+Run the commands in **Proof (reproducible run)** below.
